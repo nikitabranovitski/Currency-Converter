@@ -12,7 +12,7 @@ class ExchangeRatesViewHolder(private val binding: ListItemBinding) :
     @SuppressLint("SetTextI18n")
     fun bind(item: ExchangeRatesItem) {
         binding.titleTextView.text = item.Cur_Name
-        binding.bunTextView.text = "1 BUN = "
-        binding.ratesTextView.text = item.Cur_OfficialRate.toString() + " " + item.Cur_Abbreviation
+        binding.bunTextView.text = item.Cur_Scale.toString() + " " + item.Cur_Abbreviation + " = "
+        binding.ratesTextView.text = item.Cur_OfficialRate.toString() + " BUN"
     }
 }

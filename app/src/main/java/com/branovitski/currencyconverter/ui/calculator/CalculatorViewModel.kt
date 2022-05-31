@@ -13,6 +13,7 @@ class CalculatorViewModel @Inject constructor() : ViewModel() {
             ListOfCountries.map[it.Cur_Abbreviation] = it.Cur_OfficialRate
             ListOfCountries.list1.add(it.Cur_Abbreviation)
             ListOfCountries.list2.add(it.Cur_OfficialRate)
+            ListOfCountries.list3.add(it.Cur_OfficialRate / it.Cur_Scale)
         }
     }
 

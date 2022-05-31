@@ -3,13 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Xiaomi/.gradle/caches/transforms-3/90fe353498cdf9a0b79c5d9cc7dd4165/transformed/appcompat-1.4.1/res/layout/support_simple_spinner_dropdown_item.xml" value="0.296195652173913" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/CurrencyConverter/app/src/main/res/drawable/edittextstyle.xml" value="0.2965" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/CurrencyConverter/app/src/main/res/layout/activity_main.xml" value="0.296195652173913" />
+        <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/CurrencyConverter/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/CurrencyConverter/app/src/main/res/layout/fragment_calculator.xml" value="0.296195652173913" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/CurrencyConverter/app/src/main/res/layout/fragment_exchange_rates.xml" value="0.296195652173913" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/CurrencyConverter/app/src/main/res/layout/list_item.xml" value="0.33" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/CurrencyConverter/app/src/main/res/menu/menu_options.xml" value="0.3302083333333333" />
         <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/CurrencyConverter/app/src/main/res/menu/navigation_bottom_menu.xml" value="0.3302083333333333" />
+        <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/CurrencyConverter/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1665" />
+        <entry key="..\:/Users/Xiaomi/AndroidStudioProjects/CurrencyConverter/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1665" />
       </map>
     </option>
   </component>

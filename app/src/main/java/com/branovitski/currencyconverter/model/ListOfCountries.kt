@@ -7,5 +7,7 @@ object ListOfCountries {
 
     val list1 = ArrayList<String>()
     val list2 = ArrayList<Double>()
-    var officialRate: Double = 0.0;
+    val list3 = ArrayList<Double>()
+    var officialRate: Double = 0.0
+    var abv: String = ""
 }
