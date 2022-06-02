@@ -41,13 +41,15 @@ class CalculatorFragment : Fragment() {
         binding.spinner.adapter = ArrayAdapter(
             requireContext(),
             androidx.leanback.R.layout.support_simple_spinner_dropdown_item,
-            ListOfCountries.list1
+            list1
         )
 
         binding.spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                 ListOfCountries.officialRate = list3[p2]
                 ListOfCountries.abv = list1[p2]
+                setTextToCheckBox()
+
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
@@ -56,11 +58,31 @@ class CalculatorFragment : Fragment() {
 
         }
 
+        binding.checkbox.setOnClickListener {
+            setTextToCheckBox()
+        }
+
         binding.calculateButton.setOnClickListener {
-            binding.textView.text = "= " + viewModel.calculate(
-                ListOfCountries.officialRate,
-                binding.editText.text.toString().toDouble()
-            ).toString() + " " + ListOfCountries.abv
+            if (binding.checkbox.isChecked) {
+                binding.textView.text = "= " + viewModel.calculateAnother(
+                    ListOfCountries.officialRate,
+                    binding.editText.text.toString().toDouble()
+                ).toString() + " BUN"
+            } else {
+                binding.textView.text = "= " + viewModel.calculate(
+                    ListOfCountries.officialRate,
+                    binding.editText.text.toString().toDouble()
+                ).toString() + " " + ListOfCountries.abv
+            }
+        }
+    }
+
+    @SuppressLint("SetTextI18n")
+    fun setTextToCheckBox() {
+        if (binding.checkbox.isChecked) {
+            binding.checkbox.text = ListOfCountries.abv + " -> BUN"
+        } else {
+            binding.checkbox.text = "BUN -> " + ListOfCountries.abv
         }
     }
 }

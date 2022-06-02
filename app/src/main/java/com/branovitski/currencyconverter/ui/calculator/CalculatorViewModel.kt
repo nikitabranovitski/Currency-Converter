@@ -18,4 +18,5 @@ class CalculatorViewModel @Inject constructor() : ViewModel() {
     }
 
     fun calculate(num1: Double, num2: Double) = num2 / num1
+    fun calculateAnother(num1: Double, num2: Double) = num2 * num1
 }
